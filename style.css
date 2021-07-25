@@ -1066,15 +1066,44 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 426px) { /* modifs : avant max width : 400px */
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .social { /* ajout */
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .text-grey { /* ajout */
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0
+    }
+
+    .text-citation { /* ajout */
+        font-size: 16.5px;
+        width: 100%;
+    }
+
+    .tc-white { /* ajout */
+        font-size: 18px;
+    }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 768px) { /* avant modif : 767 px */
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .text-grey { /* ajout */
+        margin-left:9rem;
+    }
+
+    .text-citation { /* ajout */
+        width:100%;
     }
 }
