@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px; /* avant 100px 50px */
 }
 
 .bloc-md {
@@ -269,7 +269,7 @@ a:hover {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top:25px; /*margin-top: 80px;*/
 }
 
 .row-no-gutters {
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px; /* modif */
 }
 
 .tight-width-whitespace {
@@ -823,6 +823,23 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+.text-grey {
+    font-size: 20px;
+    width: 55rem;
+    margin-left: 20%; /* modif */
+    margin-bottom:2rem;
+}
+
+.text-citation {
+    font-size:20px;
+    font-style:italic; /* modif */
+    width: 68rem;
+}
+
+.text-presentation {
+    font-size:20px;
 }
 
 @media (max-width: 1024px) {
