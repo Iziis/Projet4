@@ -780,7 +780,11 @@ h4 {
 }
 
 .tc-white {
-   color:rgb(66, 64, 64)!important; /* avant modif : color: #F3976C!important; */
+   color:rgba(255, 255, 255, .7)!important; /* avant modif : color: #F3976C!important; */
+}
+
+.tc-white2 {  /* ajouté par moi */ 
+    color:white!important;
 }
 
 .btn-atomic-tangerine {
@@ -909,7 +913,7 @@ text-decoration:none;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-    
+
     .navbar .nav {
         max-width: 80%
     }
