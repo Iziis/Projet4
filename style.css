@@ -701,7 +701,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 2rem auto; /* avant tout auto */
 }
 
 h2 {
@@ -736,7 +736,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: rgba(255, 255, 255, .7)!important; /* modif */
+    margin-bottom: 2rem; /* modif */
 }
 
 .portfolio-thumb {
@@ -775,12 +776,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+   color:white!important; /* avant modif : color: #F3976C!important; */
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: rgba(255, 255, 255, .7)!important; /* avant modif : #FFFFFF!important; */
 }
 
 .btn-atomic-tangerine:hover {
@@ -825,24 +826,24 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
-.text-grey {
+.text-grey { /* tout ajouté par moi */
     font-size: 20px;
     width: 55rem;
-    margin-left: 20%; /* modif */
+    margin-left: 20%; 
     margin-bottom:2rem;
 }
 
-.text-citation {
+.text-citation { /* tout ajouté par moi */
     font-size:20px;
-    font-style:italic; /* modif */
+    font-style:italic; 
     width: 68rem;
 }
 
-.text-presentation {
+.text-presentation { /* tout ajouté par moi */
     font-size:20px;
 }
 
-.hidden {
+.hidden { /* tout ajouté par moi */
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
@@ -850,6 +851,17 @@ h4 {
     overflow: hidden;
     width: 1px;
 }
+
+.col-sm-4 a { /* tout ajouté par moi */
+    color:rgba(255, 255, 255, .7)!important;
+}
+
+.partners {  /* tout ajouté par moi */
+    margin-left:3rem;
+    color:rgba(255, 255, 255, .7)!important;
+    font-weight:bold;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
