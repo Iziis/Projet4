@@ -508,6 +508,8 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    padding: 0.5rem; /* ajout */
+    margin-top: 1rem; /* ajout */
 }
 
 .scrollToTop {
@@ -656,6 +658,7 @@ a {
 
 .container {
     max-width: 1000px;
+    position:relative;
 }
 
 .hero-bloc-text {
@@ -683,6 +686,7 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    font-size:19px /* ajout */
 }
 
 .h1 {
@@ -776,7 +780,7 @@ h4 {
 }
 
 .tc-white {
-   color:white!important; /* avant modif : color: #F3976C!important; */
+   color:rgb(66, 64, 64)!important; /* avant modif : color: #F3976C!important; */
 }
 
 .btn-atomic-tangerine {
@@ -845,7 +849,6 @@ h4 {
 
 .hidden { /* tout ajouté par moi */
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     overflow: hidden;
@@ -862,8 +865,32 @@ h4 {
     font-weight:bold;
 }
 
+.form-group { /* tout ajouté par moi */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 28rem;
+}
+
+.container2 { /* tout ajouté par moi */
+    max-width: 100%;
+    text-align: center;
+}
+
+.navbar-link a { /* tout ajouté par moi */
+margin-left:2rem;
+text-decoration:none;
+}
+
+.navbar-link { /* tout ajouté par moi */
+    position: absolute;
+    top: 30%;
+    left: 110%;
+    display: flex;
+}
 
 @media (max-width: 1024px) {
+
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -875,9 +902,14 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .navbar-link {
+        left: 70%;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    
     .navbar .nav {
         max-width: 80%
     }
@@ -886,13 +918,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -910,10 +942,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -922,8 +951,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+
     }
 }
 
@@ -946,9 +974,8 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
+    .navbar .nav {  /* modifs */
         padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
     .navbar.row {
@@ -961,13 +988,10 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
-    .nav > li {
+    .nav > li { /* modifs */
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
         padding-left: 15px;
-        width: 100%;
+        list-style: none;
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
@@ -1092,6 +1116,16 @@ h4 {
     .tc-white { /* ajout */
         font-size: 18px;
     }
+
+    .form-group {
+        width:100%;
+    }
+
+    .navbar-link {
+        top: 70%;
+        left: 11%;
+    }
+    
 }
 
 @media (min-width: 426px) and (max-width: 768px) { /* avant modif : 767 px */
