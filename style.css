@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 0.836); /* avant  rgba(255, 255, 255, .6); */
 }
 
 .d-bloc .a-btn:hover,
@@ -472,7 +472,7 @@ button {
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+    /*box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);*/
 }
 
 .icon-md {
@@ -740,7 +740,7 @@ h4 {
 }
 
 .white {
-    color: rgba(255, 255, 255, .7)!important; /* modif */
+    color: white!important; /* avant rgba(255, 255, 255, .7)!important; et rgba(255, 255, 255, 0.877)!important; /* modif */
     margin-bottom: 2rem; /* modif */
 }
 
@@ -758,7 +758,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #30303083; /* avant rgba(165, 147, 99, 0.7); */
     padding: 40px 40px 40px 40px;
 }
 
@@ -776,11 +776,11 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #595752; /* avant #fc7536cc; et rgba(98, 75, 48, 0.79);*/
 }
 
 .tc-white {
-   color:rgba(255, 255, 255, .7)!important; /* avant modif : color: #F3976C!important; */
+   color: white!important; /* avant modif : color: #F3976C!important; et rgba(255, 255, 255, .7)!important; et rgba(255, 255, 255, 0.877)!important; */
 }
 
 .tc-white2 {  /* ajouté par moi */ 
@@ -788,12 +788,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: rgba(255, 255, 255, .7)!important; /* avant modif : #FFFFFF!important; */
+    background: #303030; /* avant #F3976C; */
+    color: rgba(255, 255, 255, 0.877)!important; /* avant modif : #FFFFFF!important; et rgba(255, 255, 255, .7)!important; */
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: rgba(0, 0, 0, 0.658)!important;/* avant #c27956!important; */
     color: #FFFFFF!important;
 }
 
@@ -860,12 +860,12 @@ h4 {
 }
 
 .col-sm-4 a { /* tout ajouté par moi */
-    color:rgba(255, 255, 255, .7)!important;
+    color:white!important;/* avant rgba(255, 255, 255, .7)!important; et rgba(255, 255, 255, 0.877)!important; */
 }
 
 .partners {  /* tout ajouté par moi */
     margin-left:3rem;
-    color:rgba(255, 255, 255, .7)!important;
+    color: white!important; /* avant rgba(255, 255, 255, .7)!important; */
     font-weight:bold;
 }
 
