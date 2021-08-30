@@ -742,6 +742,8 @@ h4 {
 .white {
     color: white!important; /* avant rgba(255, 255, 255, .7)!important; et rgba(255, 255, 255, 0.877)!important; /* modif */
     margin-bottom: 2rem; /* modif */
+    font-size: 16px;
+    line-height: 3rem;
 }
 
 .portfolio-thumb {
@@ -784,7 +786,7 @@ h4 {
 }
 
 .tc-white2 {  /* ajouté par moi */ 
-    color:black!important;
+    color:white!important;
 }
 
 .btn-atomic-tangerine {
@@ -795,6 +797,17 @@ h4 {
 .btn-atomic-tangerine:hover {
     background: rgba(0, 0, 0, 0.658)!important;/* avant #c27956!important; */
     color: #FFFFFF!important;
+}
+
+.btn-atomic-dark {
+    background: rgba(0, 0, 0, 0.658);
+    color: white!important;
+    width: 58%;
+}
+
+.btn-atomic-dark:hover {
+    background: #303030;
+    color: #FFFFFF !important;
 }
 
 .ltc-white {
@@ -1126,8 +1139,8 @@ text-decoration:none;
     }
 
     .navbar-link {
-        top: 70%;
-        left: 11%;
+        top: 90%;
+        left: 14%;
     }
     
 }
